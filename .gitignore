@@ -24,4 +24,4 @@ yarn-error.log*
 
 
 #apiKey
-./src/common/api/movieApiKey.js
+/src/common/api/movieApiKey.js

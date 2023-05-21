@@ -1,6 +1,6 @@
 import React from "react";
 import noImg from "../../assets/image/noImg.png";
-import "./MovieCard.scss"
+import "./MovieCard.scss";
 import { Link } from "react-router-dom";
 
 const MovieCard = (props) => {
@@ -17,29 +17,26 @@ const MovieCard = (props) => {
             ? data.primaryImage.caption.plainText
             : "No Title";
 
-            const releaseYear =
-            data &&
-            data.releaseYear &&
-            data.releaseYear.year 
-                ? data.releaseYear.year 
-                : "No Info";
-                const movieId = data.id
+    const releaseYear =
+        data && data.releaseYear && data.releaseYear.year
+            ? data.releaseYear.year
+            : "No Info";
+    const movieId = data.id;
 
     return (
         <div className="card-item">
             <Link to={`/movie/${movieId}`}>
-
-            <div className="card-inner">
-                <div className="card-top">
-                    <img src={imgUrl} alt={data.titleText.text} />:
-                </div>
-                <div className="card-bottom">
-                    <div className="card-info">
-                        <h4>{movieTitle}</h4>
-                        <p>{releaseYear}</p>
+                <div className="card-inner">
+                    <div className="card-top">
+                        <img src={imgUrl} alt={data.titleText.text} />:
+                    </div>
+                    <div className="card-bottom">
+                        <div className="card-info">
+                            <h4>{movieTitle}</h4>
+                            <p>{releaseYear}</p>
+                        </div>
                     </div>
                 </div>
-            </div>
             </Link>
         </div>
     );

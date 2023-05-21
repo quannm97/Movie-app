@@ -1,0 +1,9 @@
+@import '/src/common/colors';
+
+.pageNotFound{
+    padding: 5rem 2rem;
+    color: $font-primary;
+    font-weight: 810;
+    display: flex;
+    flex-direction: column;
+}

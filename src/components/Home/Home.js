@@ -11,6 +11,7 @@ const Home = () => {
     useEffect(() => {
         dispatch(fetchAsyncMovies());
         dispatch(fetchAsyncShows());
+        
     }, [dispatch]);
 
     return (

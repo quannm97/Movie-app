@@ -5,8 +5,8 @@ import { getAllMovies, getAllShows } from "../../features/movies/movieSlice";
 import MovieCard from "../MovieCard/MovieCard";
 import "./MovieListing.scss";
 const MovieListing = () => {
-    const movies = useSelector(getAllMovies).payload;
-    const shows = useSelector(getAllShows).payload;
+    const movies = useSelector(getAllMovies);
+    const shows = useSelector(getAllShows);
     let renderMovies,renderShows = "";
 
     console.log(movies);

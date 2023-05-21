@@ -18,7 +18,7 @@ const App = () => {
                         <Route exact path="/" element={<Home />}></Route>
                         <Route element={<PageNotFound />}></Route>
                         <Route
-                            path="/movie/:imdbID"
+                            path="/movie/:movieId"
                             element={<MovieDetail />}
                         ></Route>
                     </Routes>
